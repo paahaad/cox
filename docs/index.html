@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COX - Log Parser CLI - Documentation</title>
+    <style>
+      :root {
+        --primary-color: #6a1b9a;
+        --secondary-color: #9c27b0;
+        --background-color: #121212;
+        --surface-color: #1e1e1e;
+        --text-color: #ffffff;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: var(--surface-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      h2 {
+        color: var(--secondary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 10px;
+      }
+      .welcome {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      pre {
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 3px;
+        padding: 10px;
+        overflow-x: auto;
+        color: #e6e6e6;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #2980b9;
+      }
+      .github-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-left: 20px;
+      }
+      .github-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>COX - Log Parser CLI</h1>
+      <a
+        href="https://github.com/paahaad/cox"
+        class="github-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+    </header>
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          The COX CLI is a dummy CLI that can only fine key=value in a files
+          which can parse to json. I'll make it smart close to awk.
+        </p>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Extract specific fields or elements from JSON data</li>
+          <li>TODO: Transform and manipulate JSON data using custom scripts</li>
+          <li>TODO: Validate the structure and syntax of your JSON files</li>
+          <li>TODO: Perform basic analytics and summarize key metrics</li>
+        </ul>
+      </section>
+
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>
+          To install COX, you can use Cargo, the Rust package manager. Run the
+          following command in your terminal:
+        </p>
+        <pre><code>cargo install cox</code></pre>
+        <p>Alternatively, you can build from source:</p>
+        <pre><code>git clone https://github.com/paahaad/cox
+cd cox
+cargo build --release
+</code></pre>
+        <p>After installation,Move the binary to /usr/local/bin can export the path. you can start using the tool by running:</p>
+        <pre><code>cox --help</code></pre>
+      </section>
+    </div>
+  </body>
+</html>
